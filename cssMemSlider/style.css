@@ -25,16 +25,14 @@ body {
    	display: flex;
     list-style: none;
     position: absolute; 
-
-	
 }
+
 .slider_picture input {
     display: none;
 }
+
 .slider_picture label {
-    
     background-color:rgb(113, 171, 255);
-    
     border: .1em solid transparent;
     bottom: -2.5em;
     border-radius: 100%;
@@ -44,59 +42,54 @@ body {
     width: .7em;
     opacity: 1;
     position: absolute;
-   
     z-index: 10;
 }
 
 .circle {
-
 	opacity: 0.5;
 	z-index: -3;
 	height: 1.7em;
     width: 1.7em;
-	
 	border-radius: 100%;
 	position: absolute;
 	transform: translate(-28%, -28%);
-	
 }
-
 
 .slider_picture circle:hover label {
     background-color: white;
 	border-color: white;
-	
 }
-
 
 .slider_picture label:hover {
     background-color: white;
 	border-color: white;
-	
 }
 
 .slider_picture input:checked + label:hover {
 	border-color: white;
 }
+
 .slider_picture input:checked + label {
-    
     border-color: rgb(113, 171, 255);
     background-color: rgb(37, 40, 42);
 }
+
 .slider_picture li:nth-child(1) label {
     left: 32.5em;
-    
 }
+
 .slider_picture li:nth-child(2) label {
-   
     left: 34.4em;
 }
+
 .slider_picture li:nth-child(3) label {
     left: 35.5em;
 }
+
 .slider_picture li:nth-child(4) label {
     left: 37em;
 } 
+
 .slider_picture img {
     border-radius: 10px;
     opacity: 0;
@@ -106,6 +99,7 @@ body {
     vertical-align: top;
     visibility: hidden;
 }
+
 .slider_picture li input:checked ~ img {
     opacity: 1;
     visibility: visible;
@@ -126,10 +120,7 @@ body {
     opacity: 1;
     visibility: visible;
     z-index: 10;
-    
 }
-
-
 
 @media (max-width: 800px) {
 	.slider_picture li:nth-child(1) label {
@@ -150,21 +141,14 @@ body {
 		left: 50%;
 		transform: translateX(3.4em);
 	} 
-
 	.slider_picture .text {
-		
-		
 		bottom: -4.2em;
-		
 	}
-
 	.slider_picture img { 
 		height: auto;
 	}
-
 	.slider_picture li:nth-child(2) .text {
 		bottom: -4.5em;
-	
 	}
 }
 
